@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29362446974,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Driversetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To check user can not login with invalid credentials",
+        "description": "",
+        "id": "feature-to-test-valid-and-invalid-logins-to-the-application;to-check-user-can-not-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5668353825,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44343055985,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on landing page",
+            "match": {
+              "location": "Steps.OpenApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4318953782,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Sign-In page",
+            "match": {
+              "location": "Steps.navigate_to_Sign_In_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25041719217,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User tries to login with \"shirish.wanjari@gmail.com\" and \"shirish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shirish.wanjari@gmail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "shirish",
+                  "offset": 58
+                }
+              ],
+              "location": "Steps.user_tries_to_login_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234363,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that validation message \"Check your email and password and try again.\"should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check your email and password and try again.",
+                  "offset": 32
+                }
+              ],
+              "location": "Steps.verify_that_validation_message_should_be_displayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 73131,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User close the browser",
+            "match": {
+              "location": "Steps.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test valid and invalid logins to the application",
+    "description": "",
+    "id": "feature-to-test-valid-and-invalid-logins-to-the-application",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

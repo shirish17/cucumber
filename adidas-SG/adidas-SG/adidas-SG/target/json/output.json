@@ -1,0 +1,199 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5401168432,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Registered user Add to bag from PLP",
+        "description": "",
+        "id": "testing-feature;registered-user-add-to-bag-from-plp;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 29520,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3769836608,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1005370352,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Check for the common components on the page",
+            "match": {
+              "location": "stepDefination.Check_Common_components()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2539820016,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 7,
+                "value": "#Then Delete step Customer selects a \"\u003cproduct\u003e\" from PLP"
+              }
+            ],
+            "line": 8,
+            "name": "Customer selects main menu \"Women\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefination.main_menu_selection(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68608544,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Customer checks for the products count",
+            "match": {
+              "location": "stepDefination.customer_checks_for_the_products()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3162724768,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Check PLP \"Supernova Sequence 9 Shoes\" has subcategory name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Supernova Sequence 9 Shoes",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefination.Check_PLP_ProductSubCategoryName(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1883020128,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Check PLP \"Supernova Sequence 9 Shoes\" has price with currency symbol",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Supernova Sequence 9 Shoes",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefination.Check_PLP_Product_hasPrice(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8255713920,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Customer adds a \"Supernova Sequence 9 Shoes\" of \"S\" from PLP page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Supernova Sequence 9 Shoes",
+                  "offset": 17
+                },
+                {
+                  "val": "S",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefination.customer_adds_a_from_PLP_page(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6681789984,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Customer checks product is added to cart",
+            "match": {
+              "location": "stepDefination.Check_PLP_AddtoBag()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Testing feature",
+    "description": "",
+    "id": "testing-feature",
+    "keyword": "Feature",
+    "uri": "Testing.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Test"
+      }
+    ]
+  }
+]
